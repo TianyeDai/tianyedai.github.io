@@ -77,21 +77,25 @@
 
         /* Grid.js dark theme overrides */
         .gridjs-wrapper { background: transparent !important; box-shadow: none !important; border: none !important; }
-        .gridjs-container { color: var(--text-primary); font-family: 'Rajdhani', sans-serif; }
-        .gridjs-table { background: transparent; }
+        .gridjs-container { color: #ffffff !important; font-family: 'Rajdhani', sans-serif; font-size: 1rem; }
+        .gridjs-table, .gridjs-tbody, .gridjs-thead { background: transparent !important; }
+        .gridjs-tr, .gridjs-tr:nth-child(even), .gridjs-tr:nth-child(odd) { background: transparent !important; }
         .gridjs-th {
-            background: rgba(102, 126, 234, 0.15) !important;
-            color: var(--text-primary) !important;
-            border-color: rgba(159, 168, 218, 0.25) !important;
+            background: rgba(102, 126, 234, 0.25) !important;
+            color: #ffffff !important;
+            border-color: rgba(159, 168, 218, 0.3) !important;
             font-weight: 700;
             letter-spacing: 0.05em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
         }
         .gridjs-td {
             background: transparent !important;
-            color: var(--text-primary) !important;
-            border-color: rgba(159, 168, 218, 0.12) !important;
+            color: #ffffff !important;
+            border-color: rgba(159, 168, 218, 0.18) !important;
         }
-        .gridjs-tr:hover .gridjs-td { background: rgba(255,255,255,0.04) !important; }
+        .gridjs-td *, .gridjs-th * { color: inherit !important; }
+        .gridjs-tr:hover .gridjs-td,
+        .gridjs-tr:hover { background: rgba(102, 126, 234, 0.12) !important; }
         .gridjs-search-input, .gridjs-input {
             background: rgba(255,255,255,0.05) !important;
             color: var(--text-primary) !important;
